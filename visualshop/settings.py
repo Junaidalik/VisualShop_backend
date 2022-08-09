@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'visualshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'visual_shop',
+        'NAME': 'visual-shop',
         'USER': config('DB_NAME'),
-        'PASSWORD':config('DB_PASSWORD'),
+        'PASSWORD':str(config('DB_PASSWORD')),
         'HOST':'localhost',
         'PORT':'5432'
     }
